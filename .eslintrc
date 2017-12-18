@@ -1,12 +1,14 @@
 {
-	"parser": "babel-eslint",
-	"extends":["airbnb"],
-
-	  "parserOptions": {
+    "parser": "babel-eslint",
+    "plugins": ["react", "prettier"],
+    "extends": ["react", "prettier", "prettier/react"],
+    "parserOptions": {
         "ecmaVersion": 6,
-        "sourceType": "module",
-        "ecmaFeatures": {
-            "jsx": true
-        }
+        "sourceType": "module"
+    },
+    "env": {
+        "browser": true,
+        "amd": true,
+        "jquery": true
     }
 }
